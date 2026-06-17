@@ -91,13 +91,13 @@
 
 /* Paper-torn edge border repeating patterns */
 .paper-border-top {
-  background-image: url('/paper-border-top.svg');
+  background-image: url('../public/paper-border-top.svg');
   background-repeat: repeat-x;
   background-size: auto 100%;
 }
 
 .paper-border-bottom {
-  background-image: url('/paper-border-bottom.svg');
+  background-image: url('../public/paper-border-bottom.svg');
   background-repeat: repeat-x;
   background-size: auto 100%;
 }

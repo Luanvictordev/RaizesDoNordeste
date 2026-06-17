@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="relative mx-auto lg:mx-0 max-w-md lg:max-w-full">
           <div className="relative z-10 brutalist-border bg-brand-yellow p-3 brutalist-shadow transition-transform duration-300 hover:rotate-1">
             <img
-              src="/cuscuzcomcarnedesolequeijocoalho.png"
+              src={`${import.meta.env.BASE_URL}cuscuzcomcarnedesolequeijocoalho.png`}
               alt="Cuscuz Recheado Raízes do Nordeste"
               className="w-full h-auto aspect-square object-cover brutalist-border bg-white"
             />

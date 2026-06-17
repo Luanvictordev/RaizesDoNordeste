@@ -37,7 +37,7 @@ export default function PromoSection() {
           <div className="md:col-span-5 relative">
             <div className="brutalist-border bg-brand-yellow p-2">
               <img
-                src="/cuscuz_combo_supreme.png"
+                src={`${import.meta.env.BASE_URL}cuscuz_combo_supreme.png`}
                 alt="Combo Raízes do Nordeste"
                 className="w-full h-auto aspect-square object-cover brutalist-border bg-white"
               />
