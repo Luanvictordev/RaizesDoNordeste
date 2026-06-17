@@ -23,9 +23,7 @@ export default function Hero() {
 
         {/* Right Side: Title, Description, CTA */}
         <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-          <div className="inline-flex items-center brutalist-border bg-brand-yellow px-3 py-1.5 text-xs font-oswald font-bold uppercase tracking-wider mb-6 brutalist-shadow">
-            AUTÊNTICA CULINÁRIA NORDESTINA!
-          </div>
+
 
           <h1 className="font-archivo text-4xl md:text-6xl text-black leading-none uppercase tracking-tighter mb-6">
             O SABOR ARRETADO DO <span className="text-brand-red">NORDESTE</span> NA SUA MESA.
