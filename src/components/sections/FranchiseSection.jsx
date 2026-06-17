@@ -25,10 +25,6 @@ export default function FranchiseSection() {
 
         {/* Header Block */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center gap-1.5 brutalist-border bg-brand-yellow px-3 py-1.5 text-xs font-oswald font-black uppercase tracking-wider mb-4 w-fit brutalist-shadow mx-auto select-none">
-            <MapPin size={14} className="text-brand-red shrink-0 animate-pulse" />
-            <span>NOSSAS LOJAS</span>
-          </div>
           <h2 className="font-archivo text-3xl md:text-5xl text-black uppercase leading-tight tracking-tight mb-4">
             ENCONTRE O RAÍZES MAIS PRÓXIMO
           </h2>
