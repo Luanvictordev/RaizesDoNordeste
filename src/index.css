@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #d21033;
+  --color-brand-yellow: #fcd34d;
+  --color-brand-bg: #f6f6f6;
+  --color-brand-black: #000000;
+
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Custom global styles to enhance the 'street/cartoonish' retro vibe */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem; /* 112px offset - completely clears the sticky header (80px-96px) and leaves breathing space */
+  }
+  body {
+    font-family: var(--font-jakarta);
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-black);
+  }
+}
+
+/* Red & white / Red & yellow checkerboard pattern like Five Guys */
+.checkerboard-pattern {
+  background-image:
+    linear-gradient(45deg, #d21033 25%, transparent 25%),
+    linear-gradient(-45deg, #d21033 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #d21033 75%),
+    linear-gradient(-45deg, transparent 75%, #d21033 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.checkerboard-pattern-yellow {
+  background-image:
+    linear-gradient(45deg, #fcd34d 25%, transparent 25%),
+    linear-gradient(-45deg, #fcd34d 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #fcd34d 75%),
+    linear-gradient(-45deg, transparent 75%, #fcd34d 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.checkerboard-pattern-white {
+  background-image:
+    linear-gradient(45deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-45deg, #ffffff 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ffffff 75%),
+    linear-gradient(-45deg, transparent 75%, #ffffff 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Thick retro border (comic/street food poster style) */
+.brutalist-border {
+  border: 3px solid #000000;
+}
+
+.brutalist-shadow {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutalist-shadow-hover:hover {
+  box-shadow: 6px 6px 0px #000000;
+  transform: translate(-2px, -2px);
+  transition: all 0.15s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d21033;
+  border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b00c25;
+}
+
+/* Paper-torn edge border repeating patterns */
+.paper-border-top {
+  background-image: url('/paper-border-top.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+
+.paper-border-bottom {
+  background-image: url('/paper-border-bottom.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
