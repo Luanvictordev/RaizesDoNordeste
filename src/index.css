@@ -15,8 +15,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem; /* 112px offset - completely clears the sticky header (80px-96px) and leaves breathing space */
+    scroll-padding-top: 7rem;
+    /* 112px offset - completely clears the sticky header (80px-96px) and leaves breathing space */
   }
+
   body {
     font-family: var(--font-jakarta);
     background-color: var(--color-brand-bg);

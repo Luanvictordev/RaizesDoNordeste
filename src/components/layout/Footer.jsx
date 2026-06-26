@@ -28,21 +28,21 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
           {/* Col 1: Logo */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="inline-block bg-brand-red text-white brutalist-border px-4 py-2.5 brutalist-shadow mb-6">
               <span className="font-archivo text-lg md:text-xl leading-none tracking-tighter font-black uppercase text-white whitespace-nowrap">
                 Raízes <span className="text-brand-yellow">do</span> Nordeste
               </span>
             </div>
-            <p className="font-oswald text-xs text-gray-400 uppercase font-bold tracking-wider max-w-sm">
+            <p className="font-oswald text-xs text-gray-400 uppercase font-bold tracking-wider max-w-sm mx-auto md:mx-0">
               Unindo a eficiência e atitude urbana do street food com a tradição afetiva, rica e arretada dos sabores do Sertão.
             </p>
           </div>
 
           {/* Col 2: Navigation Links */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left w-full">
             <h5 className="font-archivo text-md text-brand-yellow uppercase tracking-wider mb-4">MAPA DO SITE</h5>
-            <div className="grid grid-cols-2 gap-2 font-oswald text-sm font-bold uppercase">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-2 font-oswald text-sm font-bold uppercase text-center md:text-left w-full max-w-xs md:max-w-none">
               <a href="#hero" className="hover:text-brand-red transition-colors">Início</a>
               <a href="#cardapio" className="hover:text-brand-red transition-colors">O Cardápio</a>
               <a href="#destaque" className="hover:text-brand-red transition-colors">Destaque</a>
@@ -53,13 +53,13 @@ export default function Footer() {
           </div>
 
           {/* Col 3: Social & Support */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
             <h5 className="font-archivo text-md text-brand-yellow uppercase tracking-wider mb-4">REDES SOCIAIS</h5>
-            <p className="font-oswald text-xs text-gray-400 uppercase font-bold tracking-wider mb-4">
+            <p className="font-oswald text-xs text-gray-400 uppercase font-bold tracking-wider mb-4 max-w-sm mx-auto md:mx-0">
               Siga nossas postagens arretadas e participe dos nossos sorteios semanais!
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <a href="#" aria-label="Instagram" className="bg-white text-black brutalist-border p-2 hover:bg-brand-red hover:text-white transition-colors brutalist-shadow">
                 <Instagram size={20} />
               </a>
@@ -84,9 +84,9 @@ export default function Footer() {
         </div>
 
         {/* Subfooter (Copyright) */}
-        <div className="pt-8 border-t-2 border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-2xs font-oswald uppercase tracking-widest text-gray-500">
+        <div className="pt-8 border-t-2 border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-2xs font-oswald uppercase tracking-widest text-gray-500 text-center md:text-left">
           <span>© {currentYear} RAÍZES DO NORDESTE. TODOS OS DIREITOS RESERVADOS.</span>
-          <div className="flex gap-6 items-center">
+          <div className="flex flex-wrap gap-6 justify-center md:justify-start items-center">
             <a href="#" className="hover:text-white">Termos de Uso</a>
             <button
               onClick={() => setIsPrivacyModalOpen(true)}

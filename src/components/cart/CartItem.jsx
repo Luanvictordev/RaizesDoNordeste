@@ -32,6 +32,17 @@ export default function CartItem({ item, idx }) {
         </button>
       </div>
 
+      {/* Product Image */}
+      {item.image && (
+        <div className="w-12 h-12 brutalist-border bg-white overflow-hidden shrink-0">
+          <img
+            src={item.image}
+            alt={item.name}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
       {/* Info */}
       <div className="flex-1 min-w-0">
         <h4 className="font-archivo text-sm text-black uppercase leading-tight truncate">{item.name}</h4>
